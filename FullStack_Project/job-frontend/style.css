@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: #0f172a;
+  color: white;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav .nav-links a {
+  color: white;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: 30px auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border-radius: 16px;
+  padding: 60px 30px;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-box input,
+.search-box select {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  min-width: 220px;
+  font-size: 14px;
+}
+
+.btn {
+  background: #111827;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  opacity: 0.92;
+}
+
+.btn-secondary {
+  background: #475569;
+}
+
+.btn-danger {
+  background: #dc2626;
+}
+
+.section-title {
+  margin: 35px 0 18px;
+  font-size: 26px;
+  color: #0f172a;
+}
+
+.categories,
+.job-grid,
+.stats-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.categories {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.category-card,
+.stat-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.category-card h3,
+.stat-card h3 {
+  margin-bottom: 8px;
+}
+
+.job-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.job-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+}
+
+.job-card h3 {
+  color: #0f172a;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.job-card .company {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #2563eb;
+}
+
+.job-card .location,
+.job-card .salary,
+.job-card .posted {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.job-card .description {
+  margin: 12px 0;
+  line-height: 1.5;
+  color: #374151;
+  font-size: 14px;
+}
+
+.badges {
+  margin: 10px 0 14px;
+}
+
+.badge {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 6px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions a,
+.actions button {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.filter-bar,
+.form-box {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+  margin-bottom: 25px;
+}
+
+.filter-grid,
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.filter-bar input,
+.filter-bar select,
+.form-box input,
+.form-box select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.job-textarea,
+.job-text-input {
+  width: 100%;
+  margin-top: 15px;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.job-textarea {
+  resize: vertical;
+}
+
+.error-text {
+  margin-top: 12px;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+.empty-box,
+.loading-box {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.info-text {
+  margin-top: 10px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.highlight {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 16px 20px;
+  }
+
+  nav .nav-links {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  nav .nav-links a {
+    margin-left: 0;
+    margin-right: 16px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    width: 94%;
+  }
+}
